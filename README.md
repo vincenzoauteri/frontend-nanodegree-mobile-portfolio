@@ -7,3 +7,4 @@
 http://vindrop.noip.me:8080
 
 -Analyzed with Page Insight with this result:
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
