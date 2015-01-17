@@ -14,4 +14,4 @@
 
 - Then we have render blocking css. The most immediate improvement seems to be adding a media="print" attribute when loading print.css, since it seems related only to printing, and won't loaded by the browser normally.
 
-
+- PSI complains about the Google Open Fonts but after researching into it, and finding a Stack Overflow response by Ilya (http://stackoverflow.com/questions/12147595/how-do-i-use-google-fonts-on-my-site-without-compromising-the-page-speed-of-the), it is probably better to leave it be.
