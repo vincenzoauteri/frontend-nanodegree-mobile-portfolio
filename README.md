@@ -16,10 +16,10 @@
 
 - PSI complains about the Google Open Fonts but after researching into it, and finding a Stack Overflow response by Ilya (http://stackoverflow.com/questions/12147595/how-do-i-use-google-fonts-on-my-site-without-compromising-the-page-speed-of-the), it is probably better to leave it be.
 
-- Since there doesn't seem any mean to appease PSI on this issue, I removed the Google Web Fonts link, I and I fall back on normal sans-serif font family supported by the user browers.
+- But since there doesn't seem any mean to appease PSI on this issue, I removed the Google Web Fonts link, I and I fall back on normal sans-serif font family supported by the user browers.
 
--Finally, the score improves by inlining css styles directly in the html, although it makes it not so readable.
+- Finally, the score improves by inlining css styles directly in the html, although it makes it not so readable.
 
--To further improve, the embedded css is minified.
+- To further improve, the embedded css is minified.
 
--Finally, converting pizza.png to compressed jpg, further compressing pizzeria.png allows to get a score > 90 for all pages.
+- Finally, converting pizza.png to compressed jpg, further compressing pizzeria.png allows to get a score > 90 for all pages.
