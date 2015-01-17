@@ -20,10 +20,15 @@
 
 - Finally, the score improves by inlining css styles directly in the html, although it makes it not so readable.
 
-- To further improve, the embedded css is minified.
+- To further improve, the embedded css is minified, using the minify command (npm node module)
 
 - Finally, converting pizza.png to compressed jpg, further compressing pizzeria.png allows to get a score > 90 for all pages.
 
 
 #Steps taken to run pizza.html at 60 fps
 
+- Loading js console and scrolling the page we see a trace showing the ms for page update during scrolling. The average seems to be between 30 and 40 ms, so <= 30fps.
+
+- Looking at the code, we see that at the bottom there is a callaback for the 'scroll' event, calling function 'updateposition'
+
+- In this function, leaving uncommented only the metrics functions, we get to an update interval of less than 0.03ms, showing that the commented code is the bottleneck. At the same time, of course, the pizzas in the background stay still, since we have removed the relevant code. At least we have isolated the part of the code responsibles for the bottleneck.
