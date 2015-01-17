@@ -1,6 +1,6 @@
 ## Udacity Frontend Developer Nanodegree Project 4 - Website optimization
 
-#Steps taken to optimize
+#Steps taken to optimize Page Insight Score
 
 - Forked project to my repo, and cloned it on a cloud webserver running Apache2: http://vindrop.noip.me:8080
 
@@ -23,3 +23,7 @@
 - To further improve, the embedded css is minified.
 
 - Finally, converting pizza.png to compressed jpg, further compressing pizzeria.png allows to get a score > 90 for all pages.
+
+
+#Steps taken to run pizza.html at 60 fps
+
