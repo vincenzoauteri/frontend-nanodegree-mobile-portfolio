@@ -24,6 +24,8 @@
 
 - Finally, converting pizza.png to compressed jpg, further compressing pizzeria.png allows to get a score > 90 for all pages.
 
+- Automated minification and image compressio with gulp, using this tutorial http://markgoodyear.com/2014/01/getting-started-with-gulp/
+
 
 #Steps taken to run pizza.html at 60 fps
 
