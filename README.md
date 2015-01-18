@@ -1,5 +1,13 @@
 ## Udacity Frontend Developer Nanodegree Project 4 - Website optimization
 
+#Sources used in the project:
+
+https://developer.chrome.com/devtools/docs/timeline
+https://developer.chrome.com/devtools/docs/demos/too-much-layout
+http://markgoodyear.com/2014/01/getting-started-with-gulp/
+http://csstriggers.com/
+
+
 #Steps taken to optimize Page Insight Score
 
 - Forked project to my repo, and cloned it on a cloud webserver running Apache2: http://vindrop.noip.me:8080
