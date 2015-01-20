@@ -2,14 +2,19 @@
 
 #Sources used in the project:
 
+http://markgoodyear.com/2014/01/getting-started-with-gulp/
+
 https://developer.chrome.com/devtools/docs/timeline
 
 https://developer.chrome.com/devtools/docs/demos/too-much-layout
 
-http://markgoodyear.com/2014/01/getting-started-with-gulp/
-
 http://csstriggers.com/
 
+http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode
+
+http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/
+
+http://www.html5rocks.com/en/tutorials/speed/parallax/
 
 
 #Steps taken to optimize Page Insight Score
