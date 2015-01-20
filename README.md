@@ -23,9 +23,7 @@ http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
 
 #Steps taken to optimize Page Insight Score
 
-- Forked project to my repo, and cloned it on a cloud webserver running Apache2.
-
-- Analyzed index.html with Page Insight with this low result.
+- Analyzed index.html with Page Insight with this low score as a result.
 
 - The first suggestion is to optimize images. In particular recording the timeline on Google Developer Tools shows that pizzeria.jpg is a whopping ~2.5 MB and takes ~1.5s to download.
 
@@ -41,7 +39,7 @@ http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
 
 - To further improve the situation, the embedded css is minified, using the minify command (npm node module)
 
-- Javascript files are also minified.
+- Javascript is also minified.
 
 - Finally, automated minification and image compression with gulp, using this tutorial http://markgoodyear.com/2014/01/getting-started-with-gulp/
 
