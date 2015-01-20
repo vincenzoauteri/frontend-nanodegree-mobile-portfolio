@@ -16,6 +16,8 @@ http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/
 
 http://www.html5rocks.com/en/tutorials/speed/parallax/
 
+http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+
 
 #Steps taken to optimize Page Insight Score
 
@@ -58,3 +60,6 @@ http://www.html5rocks.com/en/tutorials/speed/parallax/
 
 - In the end, after more reseach on the sources above, I carried out the following optimizations to reach a refresh rate below 60 fps:
 
+  - Synced the repaint with requestAnimationFrame, and not the scroll event (the scroll event invokes requestAnimationFrame).
+  - Used translate3d to do the shift along the x-axis: multiple sources report that this way the browser aggregates the images     in their own layer, not triggering a full repaint. This can be appreciated by selecting "Show paint rectangles"  and     "Show composited layer borders" on Chrome developer tools.
+  - Finally, on page load (and viewport resize) we draw only the images that will be visible in the viewport, and not a fixed number indiscriminately.
