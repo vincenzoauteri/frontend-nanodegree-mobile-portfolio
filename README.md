@@ -1,5 +1,7 @@
 ## Udacity Frontend Developer Nanodegree Project 4 - Website optimization
 
+Live at : http://vincenzoauteri.github.io/frontend-nanodegree-mobile-portfolio
+
 #Sources used in the project:
 
 http://markgoodyear.com/2014/01/getting-started-with-gulp/
@@ -63,3 +65,4 @@ http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
   - Synced the repaint with requestAnimationFrame, and not the scroll event (the scroll event invokes requestAnimationFrame).
   - Used translate3d to do the shift along the x-axis: multiple sources report that this way the browser aggregates the images     in their own layer, not triggering a full repaint. This can be appreciated by selecting "Show paint rectangles"  and     "Show composited layer borders" on Chrome developer tools.
   - Finally, on page load (and viewport resize) we draw only the images that will be visible in the viewport, and not a fixed number indiscriminately.
+  - Created another image of the same size as the background ones, so that no scale is needed.
