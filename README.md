@@ -27,9 +27,9 @@ http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
 
 - The first suggestion is to optimize images. In particular recording the timeline on Google Developer Tools shows that pizzeria.jpg is a whopping ~2.5 MB and takes ~1.5s to download.
 
-- Resized and compressed images with Photoshop usign "save for web".
+- Resized and compressed images with Photoshop using the "save for web" option.
 
-- The next issue seems to be the analytics.js script that is blocking. Since it is not needed to render the page, we can set it with async.
+- The next issue seems to be the analytics.js script that is blocking. Since it is not needed to render the page, we can set it to async.
 
 - Then we have render blocking css. The most immediate improvement seems to be adding a media="print" attribute when loading print.css, since it seems related only to printing, and won't loaded by the browser normally.
 
@@ -58,7 +58,7 @@ http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
 
 - After researching a bit, it seems that the problem is due to the brower being optimized for scrolling content from the top-down, and not having objects scrolling indipendently on the page. The ideal would be to have the compositor (GPU supported) carrying out most of the work.
 
-- In the end, after more reseach on the sources above, I carried out the following optimizations to reach a refresh rate below 60 fps:
+- In the end, after more reseach on the sources above, I carried out the following optimizations to reach a refresh rate below the 60 fps line:
 
   - Synced the repaint with requestAnimationFrame, and not the scroll event (the scroll event invokes requestAnimationFrame).
   - Used translate3d to do the shift along the x-axis: multiple sources report that this way the browser aggregates the images     in their own layer, not triggering a full repaint. This can be appreciated by selecting "Show paint rectangles"  and     "Show composited layer borders" on Chrome developer tools.
